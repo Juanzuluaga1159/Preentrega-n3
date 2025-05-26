@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kit</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <img src="../imgs/Recurso 1.png" alt="">
+
+            <div class="hamburger" id="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <div class="nav-links" id="nav-links">
+                <a href="../index.html">Inicio</a>
+                <a href="./trabajos.html">Trabajos</a>
+                <a href="./kit.html">Kit</a>
+                <a href="./contacto.html">Contacto</a>
+                <a href="./nosotros.html">Nosotros</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-content">
+            <div class="main-content-contacto">
+                <h1>Contacto</h1>
+                <p>11-2404-3942</p>
+                <p>RedesBalcony</p>
+                <p>info@redesbalcony.com.ar</p>
+            </div>
+    
+            <div>
+                <form>
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Nombre" required />
+    
+                            <label for="telefono">Telefono</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="Numero de telefono" required />
+    
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" placeholder="Mensaje" required></textarea>
+    
+                            <button type="submit">Enviar</button>
+                        </form>
+            </div>
+
+        </div>
+    </main>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+
+
+
+    
+</body>

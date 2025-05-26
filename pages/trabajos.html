@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <img src="../imgs/Recurso 1.png" alt="Logo">
+
+            <div class="hamburger" id="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <div class="nav-links" id="nav-links">
+                <a href="../index.html">Inicio</a>
+                <a href="./trabajos.html">Trabajos</a>
+                <a href="./kit.html">Kit</a>
+                <a href="./contacto.html">Contacto</a>
+                <a href="./nosotros.html">Nosotros</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-content">
+            <div class="main-content-1">
+                <img src="../imgs/image 2 (1).png" alt="red-instalada-1" class="main-content-img">
+                <img src="../imgs/sp1 (3).png" alt="isotipo-1" class="main-content-isotipo">
+                <p class="main-content-p1">Experiencia</p>
+                <p class="main-content-p2">10 años de experiencia en el rubro</p>
+            </div>
+
+             <div class="main-content-1">
+                <img src="../imgs/image 1 (2).png" alt="red-instalada-2" class="main-content-img">
+                <img src="../imgs/sp1 (2).png" alt="isotipo-2" class="main-content-isotipo">
+                <p class="main-content-p1">Calidad y experiencia</p>
+                <p class="main-content-p2">Redes de alta calidad, instalada por expertos</p>
+            </div>
+
+             <div class="main-content-1">
+                <img src="../imgs/image 3 (1).png" alt="red-instalada-3" class="main-content-img">
+                <img src="../imgs/sp1 (1).png" alt="isotipo-3" class="main-content-isotipo">
+                <p class="main-content-p1">Seguridad</p>
+                <p  class="main-content-p2">Protección más eficiente </p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="index-footer">
+            <img src="../imgs/_Isotipo Color (1).png" alt="isotipo">
+            <div class="index-footer-content">
+                <p>RedesBalcony@gmail.com</p>
+                <p>11-3421-6534</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

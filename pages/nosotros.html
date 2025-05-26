@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+     <header>
+        <div class="navbar">
+            <img src="../imgs/Recurso 1.png" alt="logotipo">
+
+            <div class="hamburger" id="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <div class="nav-links" id="nav-links">
+                <a href="../index.html">Inicio</a>
+                <a href="./trabajos.html">Trabajos</a>
+                <a href="./kit.html">Kit</a>
+                <a href="./contacto.html">Contacto</a>
+                <a href="./nosotros.html">Nosotros</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-nosotros-all">
+            <div class="main-nosotros">
+                <h2>SOBRE NOSOTROS</h2>
+                <img src="../imgs/Group 17 (1).png" alt="red-instalada">
+            </div>
+            <div class="main-nosotros-content">
+               <p>Somos Redes Balcony, una empresa especializada en la colocación de <span class="rojo">redes para balcones</span>.
+                 Nuestro objetivo principal es garantizar la seguridad de nuestros clientes, ofreciendo una <span class="bolder">solución efectiva y duradera</span> para evitar caídas accidentales y proteger a mascotas y niños.</p>
+    
+                <p><span class="bolder">Contamos con un equipo de instaladores altamente capacitados</span> y trabajamos con las mejores redes para garantizar eficientes protecciones para balcones.</p>
+    
+                <p>Trabajamos en <span class="rojo">CABA y Mar del Plata</span>.</p>
+            </div>
+        </div>
+    </main>
+            
+
+    <footer>
+        <div class="index-footer">
+            <img src="../imgs/_Isotipo Color (1).png" alt="isotipo">
+            <div class="index-footer-content">
+                <p>RedesBalcony@gmail.com</p>
+                <p>11-3421-6534</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

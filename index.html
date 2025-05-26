@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <img src="./imgs/Recurso 1.png" alt="Logo">
+
+            <div class="hamburger" id="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <div class="nav-links" id="nav-links">
+                <a href="./index.html">Inicio</a>
+                <a href="./pages/trabajos.html">Trabajos</a>
+                <a href="./pages/kit.html">Kit</a>
+                <a href="./pages/contacto.html">Contacto</a>
+                <a href="./pages/nosotros.html">Nosotros</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="index-main">
+            <div class="index-main-content">
+                <h1>Protegé tu balcon con las mejores redes de seguridad en Capital y Mar del Plata.
+                </h1>
+                <button class="button-hero">
+                    Solicitá tu cotización ahora y asegurá tu tranquilidad.
+
+                </button>
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="">
+        <div class="index-footer">
+            <img src="./imgs/_Isotipo Color (1).png" alt="isotipo">
+            <div class="index-footer-content">
+                <p>RedesBalcony@gmail.com</p>
+                <p>11-3421-6534</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

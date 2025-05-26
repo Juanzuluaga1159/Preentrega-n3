@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kit</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <img src="../imgs/Recurso 1.png" alt="">
+
+            <div class="hamburger" id="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <div class="nav-links" id="nav-links">
+                <a href="../index.html">Inicio</a>
+                <a href="./trabajos.html">Trabajos</a>
+                <a href="./kit.html">Kit</a>
+                <a href="./contacto.html">Contacto</a>
+                <a href="./nosotros.html">Nosotros</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-kit-content">
+            <h2>PRODUCTOS DE CALIDAD</h2>
+            <h1>Venta de kits auto instalables hechos a medida</h1>
+            <p>Nuestras redes de protección para balcón están diseñadas con materiales duraderos y certificados para garantizar la seguridad y tranquilidad de tu hogar. 
+                Con una instalación fácil y rápida, nuestras redes son la solución perfecta para proteger animales y niños.</p>
+                <img src="../imgs/kit 1 (3).png" alt="">
+        </div>
+    </main>
+
+       <footer>
+        <div class="index-footer">
+            <img src="../imgs/_Isotipo Color (1).png" alt="">
+            <div class="index-footer-content">
+                <p>RedesBalcony@gmail.com</p>
+                <p>11-3421-6534</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+
+    
+</body>
+</html>
