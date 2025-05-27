@@ -1,0 +1,28 @@
+.index-footer {
+    height: 20vh;
+    background-color: #2D2D2D;
+    display: flex;
+    align-items: center;
+    padding-left: 11vw;
+    
+    img {
+        height: 150px;
+    }
+    
+}
+
+.index-footer-content {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+@media (max-width: 768px) {
+
+    .index-footer img {
+        height: 100px;
+    }
+
+}

@@ -1,0 +1,119 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: red;
+    height: 20vh;
+    padding: 1rem;
+    position: relative;
+    
+    
+    h1 {
+        color: white;
+    }
+}
+
+.nav-links {
+    display: flex;
+    gap: 1rem;
+    
+
+    a {
+        color: red;
+        text-decoration: none;
+        font-size: 22px;
+        font-weight: 400;
+        background-color: white;
+        padding: 1rem 2rem;
+        border-radius: 5%;
+        transition: background 0.3s;
+    }
+
+    a:hover {
+        background-color: rgb(197, 197, 197);
+
+    }
+
+    &.active {
+        display: flex; // o block, según tu diseño
+        flex-direction: column; // si es responsive
+    }
+
+
+}
+
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    
+    div {
+        width: 30px;
+        height: 4px;
+        background-color: white;
+        border-radius: 2px;
+    }
+
+   
+    
+
+}
+
+@media (max-width: 768px) {
+    
+    .nav-links {
+            display: none;
+            flex-direction: column;
+            background-color: red;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            text-align: left;
+            padding: 1rem 0;
+            height: 300px;
+    
+            a {
+                font-size: 20px;
+                background-color: red;
+                color: white;
+                border-bottom: 2px solid white;
+                padding: 1rem;
+    
+            }
+    
+            .nav-links.active {
+                display: flex;
+                
+    
+                &.active {
+                    display: flex; // o block, según tu diseño
+                    flex-direction: column; // si es responsive
+                }
+    
+    
+    
+    
+            }
+
+
+        
+        }   
+        
+        
+        .hamburger {
+            display: flex;
+        }
+
+        .navbar img {
+            height: 80px;
+        }
+    
+}
+
+
+
+
+

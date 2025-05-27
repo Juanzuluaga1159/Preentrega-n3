@@ -1,0 +1,57 @@
+.index-main {
+    height: 60vh;
+    background-image: url(../imgs/Frame\ 1\ \(1\).png);
+    width: 100vw;
+    background-size: cover;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+    h1 {
+        color: white;
+        width: 600px;
+        
+    }
+}
+
+.index-main-content {
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.button-hero {
+    width: 400px;
+    padding: 0.5rem;
+    font-size: 22px;
+    text-align: left;
+    color: white;
+    background-color: red;
+    border: none;
+    font-weight: 500;
+    
+    &:hover {
+        background-color: rgb(168, 4, 4);
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .index-main h1 {
+        font-size: 20px;
+        width: 300px;
+        
+    }
+
+    
+
+    .button-hero {
+    width: 250px;
+    font-size: 18px;
+    }
+}
+
+
+
